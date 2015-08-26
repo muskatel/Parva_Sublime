@@ -10,3 +10,9 @@ Installation: Download [Parva.tmLanguage](https://github.com/muskatel/Parva_Synt
 
 Built using [AAAPackageDev](https://github.com/SublimeText/AAAPackageDev)
 
+TODO
+-----------
+
+1. Escaped characters in strings
+2. Fix quotes
+3. Negative numbers
