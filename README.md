@@ -1,4 +1,4 @@
-# Parva_Sublime
+# Parva Sublime
 Language syntax recognition for Sublime Text
 -----------
 
