@@ -2,37 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>contexts</key>
-	<dict>
-		<key>brackets</key>
-		<array>
-			<dict>
-				<key>match</key>
-				<string>\)</string>
-				<key>pop</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>main</string>
-			</dict>
-		</array>
-		<key>main</key>
-		<array>
-			<dict>
-				<key>match</key>
-				<string>\(</string>
-				<key>push</key>
-				<string>brackets</string>
-			</dict>
-			<dict>
-				<key>match</key>
-				<string>\)</string>
-				<key>scope</key>
-				<string>invalid.illegal.stray-bracket-end</string>
-			</dict>
-		</array>
-	</dict>
 	<key>fileTypes</key>
 	<array>
 		<string>pav</string>
@@ -45,7 +14,7 @@
 			<key>comment</key>
 			<string>Numbers</string>
 			<key>match</key>
-			<string>\d+</string>
+			<string>(\d+)?(\.)?(\d+)</string>
 			<key>name</key>
 			<string>constant.numeric.pav</string>
 		</dict>
