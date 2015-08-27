@@ -6,7 +6,7 @@ uuid: 4aa6b831-8d6c-4b2c-96f3-7a46d049f870
 patterns:
 - comment: Numbers
   name: constant.numeric.pav
-  match: (-)?(\d+)?(\.)?(\d+)
+  match: (\d+)?(\.)?(\d+)
 
 - comment: Keyword if
   name: constant.numeric.pav
