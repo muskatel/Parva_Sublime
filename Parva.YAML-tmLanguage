@@ -18,11 +18,11 @@ patterns:
 
 - comment: Inline comments
   name: comment.pav
-  match: (/\W*\*)(.*)(\*\W*/)
+  match: (/\*)(.*)(\*/)
 
 - comment: Keywords
   name: keyword.pav
-  match: (\b)(if|while|for|else|do|goto|return)(\b)
+  match: (\b)(if|while|for|else|do|goto|break|return)(\b)
 
 - comment: Support functions
   name: support.function.pav
@@ -43,7 +43,7 @@ patterns:
        
 - comment: Function calls
   name: markup.pav
-  match: (\b)(\w*)(\W*\()
+  match: (\b)(\w*)([ ]*\()
   captures:
     '2':  {name: support.function.pav}
 
