@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+void Main() {
+	${2:/* code */}
+}
+]]></content>
+	<tabTrigger>Main</tabTrigger>
+	<scope>source.pav</scope>
+</snippet>

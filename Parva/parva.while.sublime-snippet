@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+while(${1:conditonal}) {
+	${2:/* code */}
+}
+]]></content>
+	<tabTrigger>while</tabTrigger>
+	<scope>source.pav</scope>
+</snippet>

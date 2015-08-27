@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+if(${1:conditonal}) {
+	${2:/* code */}
+}
+]]></content>
+	<tabTrigger>if</tabTrigger> -->
+	<scope>source.pav</scope> -->
+</snippet>

@@ -1,0 +1,58 @@
+name: Parva
+scopeName: source.pav
+fileTypes: [pav]
+uuid: 4aa6b831-8d6c-4b2c-96f3-7a46d049f870
+
+patterns:
+- comment: Numbers
+  name: constant.numeric.pav
+  match: (-)?(\d+)?(\.)?(\d+)
+
+- comment: Keyword if
+  name: constant.numeric.pav
+  match: (\b)(true|false|null)(\b)
+
+- comment: Single line comments
+  name: comment.pav
+  match: //.*
+
+- comment: In-line comments
+  name: comment.pav
+  match: (/\*)(.*)(\*/)
+
+- comment: Keywords
+  name: keyword.pav
+  match: (\b)(if|while|for|else|do|goto|break|continue|return|halt|switch|case)(\b)
+
+- comment: Support functions
+  name: support.function.pav
+  match: (\b)(read|write)(\b)
+
+- comment: Storage types with Functions
+  name: markup.pav
+  match: (\b)(int|bool|const|void)(\b)( \w*)(\W*\()
+  captures:
+    '2':  {name: storage.type.pav}
+    '4':  {name: entity.name.function.pav}
+
+- comment: Storage types
+  name: markup.pav
+  match: (\b)(int|bool|const|void)(\b)
+  captures:
+    '2':  {name: storage.type.pav}
+       
+- comment: Function calls
+  name: markup.pav
+  match: (\b)(\w*)([ ]*\()
+  captures:
+    '2':  {name: support.function.pav}
+
+- comment: String Quotes
+  name: string.pav
+  match: \"(.*?)[^\\]\"
+
+- comment: Char Quotes
+  name: string.pav
+  match: (\')(\\?.)(\')
+
+
