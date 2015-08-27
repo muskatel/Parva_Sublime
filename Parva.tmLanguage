@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Inline comments</string>
 			<key>match</key>
-			<string>(/\W*\*)(.*)(\*\W*/)</string>
+			<string>(/\*)(.*)(\*/)</string>
 			<key>name</key>
 			<string>comment.pav</string>
 		</dict>
@@ -107,7 +107,7 @@
 			<key>comment</key>
 			<string>Function calls</string>
 			<key>match</key>
-			<string>(\b)(\w*)(\W*\()</string>
+			<string>(\b)(\w*)([ ]*\()</string>
 			<key>name</key>
 			<string>markup.pav</string>
 		</dict>
