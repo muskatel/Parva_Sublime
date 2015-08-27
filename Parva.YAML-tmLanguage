@@ -6,7 +6,7 @@ uuid: 4aa6b831-8d6c-4b2c-96f3-7a46d049f870
 patterns:
 - comment: Numbers
   name: constant.numeric.pav
-  match: (\d+)?(\.)?(\d+)
+  match: (-)?(\d+)?(\.)?(\d+)
 
 - comment: Keyword if
   name: constant.numeric.pav
@@ -16,9 +16,13 @@ patterns:
   name: comment.pav
   match: //.*
 
+- comment: Inline comments
+  name: comment.pav
+  match: (/\W*\*)(.*)(\*\W*/)
+
 - comment: Keywords
   name: keyword.pav
-  match: (\b)(if|while|for|else|do|goto)(\b)
+  match: (\b)(if|while|for|else|do|goto|return)(\b)
 
 - comment: Support functions
   name: support.function.pav
@@ -45,7 +49,7 @@ patterns:
 
 - comment: String Quotes
   name: string.pav
-  match: (\")(.*)(\")
+  match: \"(.*?)[^\\]\"
 
 - comment: Char Quotes
   name: string.pav
