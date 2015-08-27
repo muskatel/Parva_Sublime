@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+bool ${1:Function}(${2:Paramaters}) {
+	${3:/* code */}
+	return false;
+}
+]]></content>
+	<tabTrigger>bool</tabTrigger> -->
+	<scope>source.pav</scope> -->
+</snippet>

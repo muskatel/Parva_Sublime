@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+int ${1:Function}(${2:Paramaters}) {
+	${3:/* code */}
+	return 0;
+}
+]]></content>
+	<tabTrigger>int</tabTrigger> -->
+	<scope>source.pav</scope> -->
+</snippet>
