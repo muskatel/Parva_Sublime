@@ -4,6 +4,15 @@ fileTypes: [pav]
 uuid: 4aa6b831-8d6c-4b2c-96f3-7a46d049f870
 
 patterns:
+- comment: In-line comments
+  name: comment.pav
+  begin: (\/\*)
+  end: (\*\/)
+
+- comment: Single line comments
+  name: comment.pav
+  match: \/\/.*
+
 - comment: Numbers
   name: constant.numeric.pav
   match: (\d+)?(\.)?(\d+)
@@ -11,14 +20,6 @@ patterns:
 - comment: Keyword if
   name: constant.numeric.pav
   match: (\b)(true|false|null)(\b)
-
-- comment: Single line comments
-  name: comment.pav
-  match: //.*
-
-- comment: In-line comments
-  name: comment.pav
-  match: (/\*)(.*)(\*/)
 
 - comment: Keywords
   name: keyword.pav
