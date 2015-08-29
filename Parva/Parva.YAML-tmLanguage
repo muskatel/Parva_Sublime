@@ -22,7 +22,7 @@ patterns:
 
 - comment: Keywords
   name: keyword.pav
-  match: (\b)(if|while|for|else|do|goto|break|continue|return|halt|switch|case)(\b)
+  match: (\b)(if|while|for|else|do|goto|break|continue|const|return|halt|switch|case)(\b)
 
 - comment: Support functions
   name: support.function.pav
@@ -30,7 +30,7 @@ patterns:
 
 - comment: Storage types with Functions
   name: markup.pav
-  match: (\b)(int|bool|const|void)(\b)( \w*)(\W*\()
+  match: (\b)(int|bool|void)(\b)( \w*)(\W*\()
   captures:
     '2':  {name: storage.type.pav}
     '4':  {name: entity.name.function.pav}
