@@ -50,7 +50,8 @@ patterns:
 
 - comment: String Quotes
   name: string.pav
-  match: \"(.*?)[^\\]\"
+  begin: (\")
+  end: (\")
 
 - comment: Char Quotes
   name: string.pav

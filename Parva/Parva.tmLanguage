@@ -114,10 +114,12 @@
 			<string>markup.pav</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(\")</string>
 			<key>comment</key>
 			<string>String Quotes</string>
-			<key>match</key>
-			<string>\"(.*?)[^\\]\"</string>
+			<key>end</key>
+			<string>(\")</string>
 			<key>name</key>
 			<string>string.pav</string>
 		</dict>
