@@ -20,7 +20,9 @@ Now supports PVM files too!
 - read / write
 
 #### Installation: 
-Download the Parva folder and place it in your "%AppData% \Roaming\Sublime Text 3\Packages\User" folder.
+Install using Package Control! 
+
+Alternatively, download the Parva folder and place it in your "%AppData% \Roaming\Sublime Text 3\Packages\User" folder.
 
 #### Notes
 Built using [AAAPackageDev](https://github.com/SublimeText/AAAPackageDev)
