@@ -19,14 +19,20 @@
 			<string>comment.pvm</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>(\")</string>
 			<key>comment</key>
 			<string>String Quotes</string>
-			<key>end</key>
-			<string>(\")</string>
+			<key>match</key>
+			<string>(\")(.*)(\")</string>
 			<key>name</key>
 			<string>string.pvm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numbers</string>
+			<key>match</key>
+			<string>(\d+)?(\.)?(\d+)</string>
+			<key>name</key>
+			<string>constant.numeric.pvm</string>
 		</dict>
 		<dict>
 			<key>comment</key>

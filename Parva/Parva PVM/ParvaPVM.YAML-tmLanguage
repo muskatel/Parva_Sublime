@@ -11,8 +11,11 @@ patterns:
 
 - comment: String Quotes
   name: string.pvm
-  begin: (\")
-  end: (\")
+  match: (\")(.*)(\")
+
+- comment: Numbers
+  name: constant.numeric.pvm
+  match: (\d+)?(\.)?(\d+)
 
 - comment: Keywords
   name: keyword.pvm
