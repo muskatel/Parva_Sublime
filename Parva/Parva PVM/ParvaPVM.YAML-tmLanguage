@@ -13,6 +13,10 @@ patterns:
   name: string.pvm
   match: (\")(.*)(\")
 
+- comment: String Quotes
+  name: string.pvm
+  match: (\')(.*)(\')
+
 - comment: Numbers
   name: constant.numeric.pvm
   match: (\d+)?(\.)?(\d+)

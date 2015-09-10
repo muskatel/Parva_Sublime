@@ -28,6 +28,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>String Quotes</string>
+			<key>match</key>
+			<string>(\')(.*)(\')</string>
+			<key>name</key>
+			<string>string.pvm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Numbers</string>
 			<key>match</key>
 			<string>(\d+)?(\.)?(\d+)</string>
