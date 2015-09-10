@@ -1,0 +1,4 @@
+{
+	"cmd": ["Parva", "$file"],
+	"selector": "source.pav"
+}
