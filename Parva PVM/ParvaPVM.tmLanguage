@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>pvm</string>
+	</array>
+	<key>name</key>
+	<string>Parva PVM</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Single line comments</string>
+			<key>match</key>
+			<string>;.*</string>
+			<key>name</key>
+			<string>comment.pvm</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(\")</string>
+			<key>comment</key>
+			<string>String Quotes</string>
+			<key>end</key>
+			<string>(\")</string>
+			<key>name</key>
+			<string>string.pvm</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>(\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|INC|DEC|BGT|BLT|JR|BNE|BEQ)(\b)</string>
+			<key>name</key>
+			<string>keyword.pvm</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.pvm</string>
+	<key>uuid</key>
+	<string>db0162e4-19a4-4453-8d3c-d59e08e0dd70</string>
+</dict>
+</plist>
