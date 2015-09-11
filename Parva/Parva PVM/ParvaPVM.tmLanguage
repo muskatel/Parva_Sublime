@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -17,6 +17,22 @@
 			<string>;.*</string>
 			<key>name</key>
 			<string>comment.pvm</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.pvm</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Keywords</string>
+			<key>match</key>
+			<string>((\d+[ ]*))((\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|ISLET|LOW|INC|DEC|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)(\b))</string>
+			<key>name</key>
+			<string>markup.pvm</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -38,17 +54,9 @@
 			<key>comment</key>
 			<string>Numbers</string>
 			<key>match</key>
-			<string>(\d+)?(\.)?(\d+)</string>
+			<string>(\d+)</string>
 			<key>name</key>
 			<string>constant.numeric.pvm</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Keywords</string>
-			<key>match</key>
-			<string>(\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|ISLET|LOW|INC|DEC|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)(\b)</string>
-			<key>name</key>
-			<string>keyword.pvm</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

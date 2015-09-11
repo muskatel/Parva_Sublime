@@ -9,6 +9,12 @@ patterns:
   name: comment.pvm
   match: ;.*
 
+- comment: Keywords
+  name: markup.pvm
+  match: ((\d+[ ]*))((\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|ISLET|LOW|INC|DEC|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)(\b))
+  captures:
+    '3': {name: keyword.pvm}
+    
 - comment: String Quotes
   name: string.pvm
   match: (\")(.*)(\")
@@ -19,8 +25,5 @@ patterns:
 
 - comment: Numbers
   name: constant.numeric.pvm
-  match: (\d+)?(\.)?(\d+)
+  match: (\d+)
 
-- comment: Keywords
-  name: keyword.pvm
-  match: (\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|ISLET|LOW|INC|DEC|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)(\b)
