@@ -1,9 +1,6 @@
 import re
 import sys
 
-
-
-
 if(len(sys.argv)  < 2):
 	print "Usage: python parser.py source.pvm"
 else:
@@ -12,9 +9,9 @@ else:
 
 
 	leading = re.compile('[ ]*[0-9]+ [ ]*')
-	blank = re.compile('[ ]*\n') 
+	blank = re.compile('[ ]*\n?') 
 	comment = re.compile('([ ]*)(;.*)+[ ]*\n')
-	halt = re.compile('[ ]*[0-9]+ [ ]*(HALT)( [ ]*;.+)?[ ]*\n')
+	halt = re.compile('[ ]*[0-9]+ [ ]*(HALT)( [ ]*;.+)?[ ]*\n?')
 	singleC = re.compile('[ ]*[0-9]+ [ ]*(' + singlekeywords + ')( [ ]*;.+)?[ ]*\n')
 	double = re.compile('[ ]*[0-9]+ [ ]*(' + doublekeywords + ' )[ ]*[0-9]+( [ ]*;.*)?[ ]*\n')
 	squote = re.compile('[ ]*[0-9]+ [ ]*(' + doublekeywords + ' [ ]*\'.*\')+( [ ]*;.*)?[ ]*\n')
