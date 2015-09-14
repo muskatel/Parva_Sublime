@@ -8,14 +8,14 @@ else:
 	doublekeywords = '(LDC|LDA|PRNS|DSP|BRN|BZE|NOP|LDL|STL|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)'
 
 
-	leading = re.compile('[ ]*[0-9]+ [ ]*')
-	blank = re.compile('[ ]*\n?') 
-	comment = re.compile('([ ]*)(;.*)+[ ]*\n')
-	halt = re.compile('[ ]*[0-9]+ [ ]*(HALT)( [ ]*;.+)?[ ]*\n?')
-	singleC = re.compile('[ ]*[0-9]+ [ ]*(' + singlekeywords + ')( [ ]*;.+)?[ ]*\n')
-	double = re.compile('[ ]*[0-9]+ [ ]*(' + doublekeywords + ' )[ ]*[0-9]+( [ ]*;.*)?[ ]*\n')
-	squote = re.compile('[ ]*[0-9]+ [ ]*(' + doublekeywords + ' [ ]*\'.*\')+( [ ]*;.*)?[ ]*\n')
-	dquote = re.compile('[ ]*[0-9]+ [ ]*(' + doublekeywords + ' [ ]*\".*\")+( [ ]*;.*)?[ ]*\n')
+	leading = re.compile('^[ \t]*[0-9]+[ \t]*')
+	blank = re.compile('[ \t]*\n?') 
+	comment = re.compile('([ \t]*)(;(.|[0-9])*)+[ \t]*\n')
+	halt = re.compile('[ \t]*[0-9]+[ \t]*(HALT)([ \t]*;.+)?[ \t]*\n?')
+	singleC = re.compile('[ \t]*-?[0-9]+[ \t]*(' + singlekeywords + ')([ \t]*;(.|[0-9])+)?[ \t]*\n')
+	double = re.compile('[ \t]*[0-9]+[ \t]*(' + doublekeywords + ' )[ \t]*-?[0-9]+([ \t]*;(.|[0-9])*)?[ \t]*\n')
+	squote = re.compile('[ \t]*[0-9]+[ \t]*(' + doublekeywords + '[ \t]*\'.*\')+([ \t]*;(.|[0-9])*)?[ \t]*\n')
+	dquote = re.compile('[ \t]*[0-9]+[ \t]*(' + doublekeywords + '[ \t]*\".*\")+([ \t]*;(.|[0-9])*)?[ \t]*\n')
 
 	filename = str(sys.argv[1])
 
