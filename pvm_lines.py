@@ -53,7 +53,7 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
                     blankCheck = True
                 else:
                     Error = True
-                    print "ERROR Line " + str(fileLine) + ": " + line,
+                    print("ERROR Line " + str(fileLine) + ": " + line,)
 
                 if(lineNum == prevLineNum):
                     if(blankCheck):
@@ -67,7 +67,7 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
                 fileLine += 1
         #print(output)
         if(Error):
-            print "Line numbers not changed due to error(s)!"
+            print("Line numbers not changed due to error(s)!")
         else:
             self.view.replace(edit, doc, output)
-            print "Line numbers re-calculated."
+            print("Line numbers re-calculated.")
