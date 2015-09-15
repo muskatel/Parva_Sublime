@@ -5,7 +5,7 @@ Parva language syntax recognition for Sublime Text
 This syntax highlighting was developed to improve code readability in the Parva programming language which forms part of the compiler course offered by Prof. Pat Terry at Rhodes University; it remains his intellectual property.
 
 Now supports PVM files too!
-Ctrl-Alt-L will recacluate line numbers within .pvm files.
+Ctrl-Alt-L will recalculate line numbers within .pvm files.
 
 #### Language specifications: 
 [Parva Language](http://www.cs.ru.ac.za/courses/CSc301/Translators/parva.htm)
