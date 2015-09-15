@@ -1,0 +1,3 @@
+[
+	{ "keys": ["f10"], "command": "update_pvm_line_numbers" }
+]
